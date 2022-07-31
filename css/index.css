@@ -423,7 +423,7 @@ ahover:hover{
     opacity:0.6;
 }
 .bg-f {
-    background-image: url(/image/one-page-img-04.jpg);
+    background-image: url(../image/one-page-img-04.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     
@@ -436,7 +436,7 @@ ahover:hover{
     padding:80px 61px;
 }
 .bg-f2 {
-    background-image: url('/image/fashion-brand-parallax-bg.jpg');
+    background-image: url('../image/fashion-brand-parallax-bg.jpg');
 
     background-size:cover;
     background-repeat: no-repeat;
