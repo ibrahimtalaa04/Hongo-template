@@ -1,0 +1,1339 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--metadata for the site-->
+    <meta name="description" content="Hongo is a modern and multi-purpose, super fast and highly flexible WordPress theme which is specially curated for creating WooCommerce online store, company website and blog.">
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, WordPress theme, drag &amp; drop page builder, revolution slider, html5, css3, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, wpml, Yoast SEO, masonry, grid, coming soon, faq">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <!--This is foot site icon-->
+    <link rel="icon" href="image/site_icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Hongo – Modern & Multipurpose WooCommerce WordPress Theme  – One page navigation</title>
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            vertical-align:middle;
+        }
+
+        body {
+            font-family: 'Source Sans Pro',sans-serif;
+            font-size: 14px;
+            color: #808080;
+            font-weight: 400;
+            line-height: 24px;
+            width: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            word-wrap: break-word;
+            overflow-x: hidden;
+        }
+        a {
+            font-size: 14px;
+            color: #808080;
+        }
+        ahover {
+            font-size: 14px;
+            color: #808080;
+            transition: all 0.5s ease;
+        }
+        ahover:hover{
+            color:darkorange;
+        }
+        .bg_hon {
+            background-color: #000000 !important;
+        }
+
+        .bge2 {
+            background-color: #f7f2ed !important;
+        }
+
+        .text_hon {
+            color: #232323 !important;
+        }
+
+        .navbar-brand {
+            margin-left: 16px;
+        }
+
+        .borderhead {
+            border-bottom: 0.5px solid #bfbebe;
+            z-index: 1000;
+        }
+
+        .navlinks {
+            font-size: 13px;
+            font-weight: 500;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: underline !important;
+            background: 0;
+            transition: all .15s ease-in-out;
+        }
+
+        .navbar-light .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .canvasbu {
+            border: none;
+        }
+
+        .cartbu {
+            font-size: 18px;
+            border: none;
+        }
+
+            .cartbu:focus {
+                box-shadow: none;
+            }
+
+
+        .active1 .marginemin1 {
+            transform: translateY(13px),rotate(45deg);
+        }
+
+        .active1 .line {
+            opacity: 0;
+        }
+
+        .active1 .marginemin {
+            transform: translateY(-13px),rotate(-45deg);
+        }
+
+        .bx-minus {
+            font-size: 24px !important;
+            font-weight: 300 !important;
+        }
+
+        .marginemin {
+            margin-top: -19px;
+        }
+
+        .marginemin1 {
+            margin-bottom: -19px;
+        }
+
+        .cover-background {
+            position: relative !important;
+            background-size: cover !important;
+            overflow: hidden !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            height: 600px;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            text-indent: 0;
+            background-color: transparent;
+            background-clip: unset;
+        }
+
+        .bge {
+            background-color: #f5ebdf !important;
+        }
+
+        .carousel-indicators {
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;
+            top: 40%;
+            right: 50px;
+            left: unset;
+            bottom: unset;
+            margin: 0;
+        }
+
+            .carousel-indicators .active {
+                text-decoration: line-through;
+            }
+
+        .followrot {
+            transform: rotate(-90deg);
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: -5px;
+        }
+
+        .followpos {
+            top: 40%;
+            left: 40px;
+            z-index: 111;
+        }
+
+            .followpos ul li a {
+                font-size:16px;
+            }
+
+        .scrollspy-example .carousel .carousel-inner .carousel-item h6 {
+            font-size: 14px;
+        }
+
+        .scrollspy-example .carousel .carousel-inner .carousel-item p {
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 13px;
+            color: rgb(128, 128, 128);
+            margin-left: -6px;
+            padding-right: 30px;
+        }
+
+        .scrollspy-example .carousel .carousel-inner .carousel-item h1 {
+            font-size: 44px;
+            line-height: 44px;
+            color: #232323;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 25px;
+            margin-top: 20px;
+            margin-left: -6px;
+        }
+
+        .scrollspy-example .carousel .carousel-inner .carousel-item h3 {
+            font-size: 18px;
+            font-size: 20px;
+            line-height: 28px;
+            line-height: 30px;
+            margin-left: -6px;
+        }
+
+        .scrollspy-example .carousel .carousel-inner .carousel-item h6::after {
+            width: 25px;
+            position: absolute;
+            content: "";
+            left: 0;
+            height: 1px;
+            background: #232323;
+            top: 6px;
+        }
+
+        .shopbtn {
+            border: 2px solid #232323;
+            background-color: #232323;
+            padding: 8px 18px;
+            font-size: 11px;
+            line-height: 18px !important;
+            font-weight: 500;
+            margin-left: -6px;
+        }
+
+        .carousel-item {
+            padding-left: 8%;
+        }
+
+        .shopbtn:hover {
+            background-color: transparent;
+            color: #232323 !important;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .slidafter {
+            color: #808080;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            margin-left: 16px;
+        }
+
+        .icons {
+            font-size: 20px;
+            top: -1px;
+            left: -22px;
+        }
+
+
+        .con {
+            position: relative;
+
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            transition: transform 0.3s;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+        .con:hover .image {
+            transform: scale(1.1,1.1);
+        }
+        .con:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            background-color: #232323;
+            opacity: 0.7;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .h4::before {
+            width: 9px;
+            height: 2px;
+            background-color: #232323;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+
+        .heading-style-4 {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #232323;
+        }
+
+        .heading-style-3 {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 500;
+            color: #232323;
+        }
+        .productlink:hover{
+            cursor:pointer;
+        }
+        .product-price {
+            font-weight: 600;
+            color: #232323;
+            font-size: inherit;
+            line-height: 20px;
+            transition:all 0.5s ease;
+        }
+        .product-price:hover{
+            color:darkorange;
+        }
+        .imgtest2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+
+            .imgtest2:hover, .productlink:hover .imgtest2:hover {
+                opacity: 1 !important;
+            }
+
+        .productlink:hover .product-price:hover {
+            color: darkorange;
+        }
+
+        .disdiv {
+            top: 15px;
+            left: 12px;
+        }
+
+        .discount {
+            background-color: #16b36e;
+            padding: 2px 7px 1px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        .lovepos {
+            color: #232323;
+            background-color: white;
+            z-index: 1;
+            right: 15px;
+            top: 15px;
+            font-size: 12px;
+            opacity: 1;
+            width: 30px;
+            height: 30px;
+            line-height: 31px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 100%;
+            transition:all 0.6s;
+        }
+
+            .lovepos:hover {
+                color: white;
+                background-color: black;
+            }
+
+        .underimg {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box1 a {
+            display: block;
+            padding: 5px;
+            color: white;
+            background-color: #232323;
+            transition: all 0.8s ease;
+        }
+
+            .box1 a:hover {
+                color: #232323;
+                background-color: white;
+            }
+        .box2{
+            border-left:1px #808080 solid;
+        }
+        .blog-style {
+            line-height: 23px;
+            font-weight: 400;
+            font-size: 16px !important;
+            color:#232323;
+        }
+        .p:before {
+            width: 12px;
+            height: 1px;
+            background-color: #232323;
+            content: "";
+            position: relative;
+            left: 0;
+            top: -4px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .blog-img{
+            transition:all 0.5s ease;
+        }
+        .blog-img:hover{
+            margin-left:20px;
+            opacity:0.6;
+        }
+        .bg-f {
+            background-image: url(image/one-page-img-04.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            
+        }
+        .bg-foot {
+            background-color: #f7f2ed !important;
+           
+        }
+        .pad-f{
+            padding:80px 61px;
+        }
+        .bg-f2 {
+            background-image: url('image/fashion-brand-parallax-bg.jpg');
+
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .bg-f22 {
+            opacity: 0.9;
+            background-color: #232323;
+        }
+        .last-form{
+            padding:60px 64px;
+        }
+        .input-foot {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #484848;
+            border-radius: 0;
+            color: #808080;
+            font-size:14px;
+        }
+        
+            .input-foot:active, .input-foot:hover, .input-foot:focus
+            {
+                background-color: transparent !important;
+                box-shadow: none !important;
+                border:0;
+                border-bottom: 1px solid #484848;
+                color: #808080;
+                border-radius:0 !important;
+                border:2px solid #fff;
+            }
+            .input-foot:hover, .input-foot:focus {
+                box-shadow: none;
+                border: 0;
+                border-bottom: 1px solid #484848;
+            }
+        .submit-foot {
+            font-size: 14px;
+            background-color: #fff;
+            color: #000;
+            padding: 5px 18px;
+            border-radius: 0 !important;
+            border: 3px solid #fff;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+            .submit-foot:hover {
+                background-color: transparent;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+            .submit-foot:active, .submit-foot:focus {
+                box-shadow: none;
+                border: 3px solid #fff;
+            }
+        .bg-f-3 {
+            background-color: #1e1e1e;
+        }
+        .footer-p {
+            font-weight: 500;
+            font-size: 12px;
+            color: #B7B7B7;
+        }
+        .social-link {
+            color: #B7B7B7;
+            padding: 2px 3px;
+            font-size: 20px;
+        }
+        .instagram {
+            transition: all 0.5s ease;
+        }
+        .instagram:hover {
+            color: #F77737;
+        }
+        .linkedin {
+            transition: all 0.5s ease !important;
+        }
+            .linkedin:hover {
+                color: #0077b5;
+            }
+        .facebook {
+            transition: all 0.5s ease !important;
+        }
+            .facebook:hover {
+                color: #4267B2;
+            }
+        .twitter {
+            transition: all 0.5s ease !important;
+        }
+            .twitter:hover {
+                color: #1DA1F2;
+            }
+        .ibrahim {
+            font-size: 16px;
+            color: #B7B7B7;
+            font-weight:500;
+            transition: all 0.5s ease-in-out;
+        }
+            .ibrahim:hover {
+                color: darkorange;
+            }
+        @media (max-width: 767px) {
+            .heading-style-3 {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        @media screen and (min-width:992px)
+        {
+            .popup-img{
+                width:100%;
+                height:auto;
+            }
+        }
+        @media screen and (max-width:991px) {
+            .navepad {
+                padding-top: 16px !important;
+                padding-bottom: 18px !important;
+            }
+
+            header .navbar-nav {
+                background-color: rgba(23,23,23,1) !important;
+                padding: 0;
+            }
+
+                header .navbar-nav > li {
+                    border-bottom: 1px solid rgba(255,255,255,0.06);
+                }
+
+            .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+                text-decoration: none !important;
+            }
+
+            .carousel-indicators {
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                right: 0;
+                bottom: -280px;
+                left: 0;
+            }
+
+            .followpos {
+                left: unset;
+            }
+
+            .scrollspy-example .carousel .carousel-inner .carousel-item h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .scrollspy-example .carousel .carousel-inner .carousel-item h3 {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .heading-style-3 {
+                font-size: 22px;
+                line-height: 28px;
+            }
+            .pad-f{
+                padding:100px 125px;
+            }
+            .bg-f{
+                height:600px;
+            }
+            .footer-p{
+                display:none;
+            }
+            .footer-input{
+                width:100% !important;
+            }
+        }
+    </style>
+</head>
+<body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0" >
+
+    <header class=" position-fixed top-0 w-100 bg_hon  borderhead">
+        <div class="navbar navbar-light navbar-expand-lg py-0 " id="">
+            <div class="container-fluid py-lg-3 px-0 px-lg-5 ">
+                <a href="index.html" class="navbar-brand navepad"><img src="image/Hongo_logo.png" title="Website Logo" alt="Website logo image" /></a>
+                <button class="navbar-toggler ms-auto me-0" type="button">
+                    <div class="d-flex flex-column hum">
+                        <span class="text-white marginemin1"><i class='bx bx-minus '></i> </span>
+                        <span class="text-white line "><i class='bx bx-minus'></i></span>
+                        <span class="text-white marginemin "><i class='bx bx-minus'></i></span>
+                    </div>
+                </button>
+                <script>
+                    var nav = document.getElementsByClassName('navbar-toggler')
+                    var hum = document.getElementsByClassName('hum');
+                    nav[0].addEventListener('click', function () {
+                        hum[0].classList.toggle('active1');
+                        var navcar = document.getElementById('navbarNav');
+                        var bsCollapse = new bootstrap.Collapse(navcar, {
+                            toggle: true
+                        })
+                    })
+                </script>
+                <div class="order-lg-last mt-2 px-4">
+                    <button class="bg-transparent text-white canvasbu mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-search'></i></button>
+                    <a href="#" class="text-white mx-1"><i class='bx bx-user'></i></a>
+                    <a href="#" class="text-white mx-1"><i class='bx bx-heart'></i></a>
+                    <button type="button" class="btn text-white cartbu p-0 mx-1 mb-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                        <i class='bx bx-cart'></i>
+                    </button>
+                </div>
+
+                <nav class="collapse navbar-collapse order-lg-1 mt-2 mt-lg-0" id="navbarNav">
+                    <ul class="navbar-nav  mx-lg-auto p-0 nav-pills" id="navbar-example2">
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white ms-lg-0 navepad" href="#scrollspyHeading1">home</a></li>
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white navepad" href="#scrollspyHeading2">about</a></li>
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white navepad" href="#scrollspyHeading3">shop</a></li>
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white navepad" href="#scrollspyHeading4">Testimonial</a></li>
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white navepad" href="#scrollspyHeading5">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks text-white navepad me-0" href="#scrollspyHeading6">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="scrollspy-example" >
+        <div id="scrollspyHeading1">
+            <div class="container-fluid p-0 bge position-relative">
+                <div class="position-absolute followpos">
+                    <ul class="py-0 px-3">
+                        <li class="list-unstyled"><a href="http://www.twitter.com" class="text-decoration-none social-link twitter"><i class='bx bxl-twitter'></i></a></li>
+                        <li class="list-unstyled my-2"><a href="http://www.facebook.com" class="text-decoration-none social-link linkedin"><i class='bx bxl-linkedin'></i></a></li>
+                        <li class="list-unstyled"><a href="http://www.facebook.com" class="text-decoration-none social-link facebook"><i class='bx bxl-facebook'></i></a></li>
+                        <li class="list-unstyled"><a href="http://www.instagram.com" class="text-decoration-none social-link instagram"><i class='bx bxl-instagram'></i></a></li>
+                    </ul>
+                    <div class="text-uppercase text-black-50 followrot d-inline-block mt-4">
+                        Follow us
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span class="text-dark">01</span></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><span class="text-dark">02</span></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><span class="text-dark">03</span></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"><span class="text-dark">04</span></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="container-fluid p-0">
+                            <div class="carousel-item active ">
+                                <div class="cover-background" style="background-image:url(image/one-page-slider-01.jpg)">
+                                    <div class="row w-100 h-100 align-items-center justify-content-lg-start ms-2">
+                                        <div class="col-9 col-lg-4">
+                                            <h6 class="position-relative">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; NEW COLLECTION 2019</h6>
+                                            <h1 class="mb-0">Brown leather</h1>
+                                            <h1 class="mt-0">women's bags</h1>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry. </p>
+                                            <h3 class="my-4"><del>Regular £69.00</del> <strong>Just £59.00</strong></h3>
+                                            <a href="#" class="text-decoration-none shopbtn text-center text-uppercase text-white ">Shope women</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cover-background" style="background-image:url(image/one-page-slider-04.jpg)">
+                                    <div class="row w-100 h-100 align-items-center justify-content-lg-start ms-5">
+                                        <div class="col-9 col-lg-4">
+                                            <h6 class="position-relative">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  MADE OF NATURAL MATERIALS</h6>
+                                            <h1 class="mb-0">Natural mules</h1>
+                                            <h1 class="mt-0">with bow bag</h1>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry. </p>
+                                            <h3 class="my-4"><del>Regular £69.00</del> <strong>Just £59.00</strong></h3>
+                                            <a href="#" class="text-decoration-none shopbtn text-center text-uppercase text-white ">Shope women</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="cover-background" style="background-image:url(image/one-page-slider-05.jpg)">
+                                    <div class="row w-100 h-100 align-items-center justify-content-lg-start ms-5">
+                                        <div class="col-9 col-lg-4">
+                                            <h6 class="position-relative">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  HEADBAND WITH A KNOT</h6>
+                                            <h1 class="mb-0">Printed turban</h1>
+                                            <h1 class="mt-0">style tote bag</h1>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry. </p>
+                                            <h3 class="my-4"><del>Regular £69.00</del> <strong>Just £59.00</strong></h3>
+                                            <a href="#" class="text-decoration-none shopbtn text-center text-uppercase text-white ">Shope men</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cover-background" style="background-image:url(image/one-page-slider-06.jpg)">
+                                    <div class="row w-100 h-100 align-items-center justify-content-lg-start ms-5">
+                                        <div class="col-9 col-lg-4">
+                                            <h6 class="position-relative">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; CLASSIC CAMOUFLAGE</h6>
+                                            <h1 class="mb-0">Camouflage</h1>
+                                            <h1 class="mt-0">trunks bag</h1>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry. </p>
+                                            <h3 class="my-4"><del>Regular £69.00</del> <strong>Just £59.00</strong></h3>
+                                            <a href="#" class="text-decoration-none shopbtn text-center text-uppercase text-white ">Shope women</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-white">
+                <div class="container-lg bg-white">
+                    <div class="row  py-5 ">
+                        <div class="col-md-4 text-center">
+                            <p class="slidafter position-relative d-inline-block"><span class=" position-absolute icons"><i class='bx bx-world '></i> </span><span class="slidafter">FREE STANDARD SHIPPING</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <p class="slidafter position-relative d-inline-block"><span class=" position-absolute icons"><i class='bx bx-wallet'></i></span><span class="slidafter">100% MONEY BACK</span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <p class="slidafter position-relative d-inline-block"><span class=" position-absolute icons"><i class='bx bx-gift'></i></span><span class="slidafter">GIFTS FOR MEMBERS</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="overflow-hidden">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="con w-100">
+                                        <img src="image/one-page-collection-06.jpg" alt="Avatar" class="image img-fluid aimg ">
+                                        <div class="middle">
+                                            <div class="text">John Doe</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="overflow-hidden">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="con w-100">
+                                        <img src="image/one-page-collection-05.jpg" alt="Avatar" class="image img-fluid aimg ">
+                                        <div class="middle">
+                                            <div class="text">John Doe</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="overflow-hidden">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="con w-100">
+                                        <img src="image/one-page-collection-01.jpg" alt="Avatar" class="image img-fluid aimg ">
+                                        <div class="middle">
+                                            <div class="text">John Doe</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="overflow-hidden">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="con w-100">
+                                        <img src="image/one-page-collection-03.jpg" alt="Avatar" class="image img-fluid aimg ">
+                                        <div class="middle">
+                                            <div class="text">John Doe</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scrollspyHeading2">
+            <div class="container-lg my-lg-5 py-lg-4">
+                <div class="row my-5 py-5">
+                    <div class="col-md-6 ps-3">
+                        <h4 class="h4 text-uppercase position-relative heading-style-4">
+                            <span class="ms-3">
+                                about company
+                            </span>
+                        </h4>
+                        <h3 class="heading-style-3">
+                            The principle of the design - the harmony, rhythm and balance are all the same with interior and fashion design
+                        </h3>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <p class="">
+                            The standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested sections and 1.10 from de finibus bonorum et malorum by cicero are also reproduced in their exact original form, accompanied English versions from the 1914 translation by rackham. It is a long & established fact a reader will be distracted the readable content of a page when looking at its layout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bge2">
+                <div class="container-md py-5 ">
+                    <div class="row align-items-center py-5">
+                        <div class="col-lg-6">
+                            <img src="image/one-page-img-03.png" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
+                            <h4 class="h4 heading-style-4 position-relative">
+                                <span class="ms-3">
+                                    FASHION BRAND THAT CONTEMPORARY
+                                </span>
+                            </h4>
+                            <h3 class="heading-style-3 mb-3">
+                                Latest celebrity style fashion and outfit trends
+                            </h3>
+                            <p>
+                                The standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested sections and 1.10 from de finibus bonorum et malorum by cicero are also reproduced in their exact original form, accompanied english versions from the 1914 translation by rackham. It is a long & established fact a reader will be distracted the readable content of a page when looking.
+                            </p>
+                            <p>
+                                It has has survived not only five centuries, but its also the leap into electronic typesetting leap into life electronic typesetting survived not only five centuries, but also into electronic typesetting.
+                            </p>
+                            <a href="#" class="text-decoration-none shopbtn text-center text-uppercase text-white ">more information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scrollspyHeading3">
+            <div class="container-lg">
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-4 mx-auto text-center my-5">
+                        <h3 class="heading-style-3">Recent Products</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-01-1-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-01-a-1-1.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Sleeve Sweater</span></h2></a>
+                            </a>
+                            <p class="m-0">$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-02-1-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-02-a-1-1-1.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="product-price mt-5"><span>Traveller Shirt</span></h2>
+                                </a>
+                            </a>
+                            <p class="m-0">$510.00</p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-01-b.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-03-a-1-1.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="product-price mt-5"><span>Sleeve Sweater</span></h2>
+                                </a>
+                            </a>
+                            <p class="m-0"><del>$140.00</del><span class="ms-3">$120.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-04.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-04-a-1.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Skinny Trousers</span></h2></a>
+                            </a>
+                            <p class="m-0">$200.00</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-05-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-05-a-1.jpg" class="img-fluid imgtest2" />
+                                    <div class="position-absolute disdiv">
+                                        <span class="discount">-12%</span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>High Neck Sweater</span></h2> </a>
+                            </a>
+                            <p class="m-0"><del>$35.00</del><span class="ms-3">$40.00</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-06-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-06-a-1.jpg" class="img-fluid imgtest2" />
+                                    <div class="position-absolute disdiv">
+                                        <span class="discount">-14%</span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Sleeve Sweater</span></h2> </a>
+                            </a>
+                            <p class="m-0"><del>$140.00</del><span class="ms-3">$120.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-07-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-07-a-1.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Pocket Sweatshirt</span></h2> </a>
+                            </a>
+                            <p class="m-0">$410.00</p>
+                        </div>
+                    </div>
+
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-08-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-08-a.jpg" class="img-fluid imgtest2" />
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Top With Pleated</span></h2> </a>
+                            </a>
+                            <p class="m-0">$20.00 – $50.00</p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-01-d.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-09-a-1-1.jpg" class="img-fluid imgtest2" />
+                                    <div class="position-absolute disdiv">
+                                        <span class="discount">-14%</span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Cotton Sweater</span></h2> </a>
+                            </a>
+                            <p class="m-0"><del>$180.00</del><span class="ms-3">$155.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div>
+                            <a href="#" class="text-decoration-none m-0 productlink ahover">
+                                <div class="position-relative">
+                                    <img src="image/fashion-recent-products-10-1.jpg" class="img-fluid" />
+                                    <img src="image/fashion-recent-products-10-a-1.jpg" class="img-fluid imgtest2" />
+                                    <div class="position-absolute disdiv">
+                                        <span class="discount">-18%</span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none lovepos position-absolute  " title="Add to Wishlist"><i class='bx bx-heart'></i></a>
+                                    <div class=" text-center  underimg">
+                                        <div class="w-50 box1">
+                                            <a href="#" class=""><i class='bx bx-cart'></i></a>
+                                        </div>
+                                        <div class="w-50 box1 box2">
+                                            <a href="#" class=""><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h2 class="product-price mt-5"><span>Texture Plain Regular</span></h2> </a>
+                            </a>
+                            <p class="m-0"><del>$85.00</del><span class="ms-3">$70.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scrollspyHeading4">
+        </div>
+        <div id="scrollspyHeading5" class="mb-5 pb-5">
+            <div class="container-fluid">
+                <div class="container-lg">
+                    <div class="row pt-5">
+                        <div class="col-md-6 col-lg-4 mx-auto text-center my-5">
+                            <h3 class="heading-style-3">Latest Blog</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg mb-5 pb-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 ">
+                    <div class="col">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="image/blog-listing-img63-578x771.jpg" class="img-fluid mb-3 blog-img w-100" /></a>
+                            <a href="#" class="text-decoration-none d-inline-block shopbtn text-center text-uppercase text-white">Photography</a>
+                            <h3 class="mt-2 blog-style"><a href="#" class="text-decoration-none blog-style product-price">Fashion is part of culture and it’s about more than just dress</a></h3>
+                            <p class="position-relative "><span class="p">By</span> <a href="#" class="text-decoration-none product-price">Alexis Richards</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="image/blog-listing-img58-578x771.jpg" class="img-fluid mb-3 blog-img w-100" /></a>
+                            <a href="#" class="text-decoration-none d-inline-block shopbtn text-center text-uppercase text-white">Photography</a>
+                            <h3 class="mt-2 blog-style"><a href="#" class="text-decoration-none blog-style product-price">I design to make women feel confident and beautiful fashion</a></h3>
+                            <p class="position-relative "><span class="p">By</span> <a href="#" class="text-decoration-none product-price">Alexis Richards</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="image/blog-listing-img59-578x771.jpg" class="img-fluid mb-3 blog-img w-100" /></a>
+                            <a href="#" class="text-decoration-none d-inline-block shopbtn text-center text-uppercase text-white">Photography</a>
+                            <h3 class="mt-2 blog-style"><a href="#" class="text-decoration-none blog-style product-price">A designer is only as good as the star who wears her clothes</a></h3>
+                            <p class="position-relative "><span class="p">By</span> <a href="#" class="text-decoration-none product-price">Alexis Richards</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="image/blog-listing-img60-578x771.jpg" class="img-fluid mb-3 blog-img w-100" /></a>
+                            <a href="#" class="text-decoration-none d-inline-block shopbtn text-center text-uppercase text-white">Photography</a>
+                            <h3 class="mt-2 blog-style"><a href="#" class="text-decoration-none blog-style product-price ahover">Chandeliers are marvels of drop dead showiness the jewellery</a></h3>
+                            <p class="position-relative "><span class="p">By</span> <a href="#" class="text-decoration-none product-price">Alexis Richards</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="scrollspyHeading6">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-lg-stretch">
+                    <div class="col-lg-4 p-0 bg-f">
+
+                    </div>
+                    <div class="col-lg-3 bg-foot pad-f">
+                        <div class="">
+                            <div class="d-flex my-3">
+                                <div class="text-dark">
+                                    <i class='bx bxs-envelope'></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-dark mb-0">Address details</p>
+                                    <p class="my-0">401 Broadway, 24th Floor</p>
+                                    <p>Iceland, Iceland 10013.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="text-dark">
+                                    <i class='bx bxs-envelope'></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-dark mb-0">Address details</p>
+                                    <p class="my-0">401 Broadway, 24th Floor</p>
+                                    <p>Iceland, Iceland 10013.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="text-dark">
+                                    <i class='bx bxs-envelope'></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-dark mb-0">Address details</p>
+                                    <p class="my-0">401 Broadway, 24th Floor</p>
+                                    <p>Iceland, Iceland 10013.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 bg-f2 p-0 m-0 overflow-hidden ">
+                        <div class=" bg-f22 w-100 h-100 last-form">
+                            <div>
+                                <p class="h2 text-white my-3">Simply fill out the form and we'll be in touch with you soon!</p>
+                                <label for="name" class="form-label"></label>
+                                <input type="text" class="form-control input-foot my-2" id="name" placeholder="Name*" required>
+
+                                <label for="email" class="form-label"></label>
+                                <input type="text" class="form-control input-foot  my-2" id="email" placeholder="Email" required>
+
+                                <label for="subject" class="form-label"></label>
+                                <input type="text" class="form-control  input-foot  my-2" id="subject" placeholder="Subject" required>
+
+                                <label for="message" class="form-label"></label>
+                                <textarea class="form-control input-foot  my-3" id="message" rows="4" placeholder="Your message"></textarea>
+                                <input type="submit" class=" form-control w-auto d-inline-block  mt-3 submit-foot" id="subject" value="Send Message">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5 p-5 d-flex justify-content-center ">
+                <div>
+                    <p class="h4 heading-style-4 position-relative">
+                        <span class="ms-3">INSTAGRAM @HONGO FASHION</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-f-3 pt-2">
+                <div style="border-bottom: 1px solid rgba(159,159,159,0.1)">
+                    <div class="container-lg py-2">
+                        <div class="row mt-1">
+                            <div class="col-lg-10 d-flex">
+                                <p class="footer-p my-2 me-2">LAST CHANCE TO WIN OUR DISCOUNT!</p>
+                                <div class="d-flex p-0 px-2 w-auto footer-input" style="background: #303030;">
+                                    <input type="text" class="form-control input-foot py-2 border-0 " id="email" placeholder="Enter you email..." style="font-size:14px;" required>
+                                    <input type="submit" class=" form-control submit-foot border-0 bg-transparent" id="subject" value="Send Message" style="color:#808080; font-size:14px; width:150px;">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 mt-3 mt-lg-0 text-center text-lg-end">
+                                <a href="http://www.facebook.com" class="text-decoration-none social-link facebook"><i class='bx bxl-facebook'></i></a>
+                                <a href="http://www.twitter.com" class="text-decoration-none social-link twitter"><i class='bx bxl-twitter'></i></a>
+                                <a href="http://www.facebook.com" class="text-decoration-none social-link linkedin"><i class='bx bxl-linkedin'></i></a>
+                                <a href="http://www.instagram.com" class="text-decoration-none social-link instagram"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #141414 !important">
+                <div class="container pt-1 ">
+                    <div class="row py-2 mt-2">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <p>© 2022 HONGO is Proudly Developed by:<a href="#" class="text-decoration-none ibrahim ms-2">IBRAHIM ALTALAA</a> </p>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end mt-3 mt-lg-0 ">
+                            <img src="image/footer-payment-icon.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="border-radius:unset;">
+                <div class="modal-header" style="border:none;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2">
+                    <img src="image/popup-subscribe.jpg" class="img-fluid popup-img" />
+                    <div class="container ">
+                        <div class="row p-4">
+                            <div class="col-lg-4">
+                                <h5 class="text-dark">
+                                    Join our newsletter
+                                    and get 20% discount
+                                </h5>
+                            </div>
+                            <div class="col-lg-6 ms-auto">
+                                <div class="input-group">
+                                    <input class="form-control form-control-sm" type="email" required placeholder="Enter your Email ...">
+                                    <button type="submit"style="border:none;" class="p-2 border-2 border-light "><i class='bx bxs-chevron-right'></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        setTimeout(function () {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                keyboard: false
+            })
+            myModal.show()
+
+        }, 1000);
+
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
